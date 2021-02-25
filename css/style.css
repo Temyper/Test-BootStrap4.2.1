@@ -1,0 +1,42 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #c7860f;
+  display: flex;
+  flex-flow: column;
+  min-width: 210mm;
+  min-height: 297mm;
+}
+
+header {
+  background-color: #d69b41;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  /* 親要素をFlexboxにする */
+  justify-content: center;
+  /* 横を中央揃えにする */
+  align-items: center;
+  /* 縦を中央揃えにする */
+  flex-direction: column;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  margin-top: auto;
+  color: white;
+  height: 60px;
+  padding: 20px;
+}/*# sourceMappingURL=style.css.map */

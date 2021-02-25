@@ -51,6 +51,18 @@ main {
   background-color: gold;
 }
 
+.contents {
+  background-color: #7a7676;
+  height: 600px;
+}
+.contents__menu__item {
+  background-color: #7ebcf7;
+  text-align: center;
+  font-size: large;
+  padding: 5px;
+  margin: 5px;
+}
+
 footer {
   background-color: black;
   text-align: center;

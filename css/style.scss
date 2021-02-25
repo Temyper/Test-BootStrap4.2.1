@@ -9,7 +9,7 @@ a {
 }
 
 body {
-  background-color: rgb(199, 134, 15);
+  background-color: rgb(109, 236, 147);
   display: flex;
   flex-flow: column;
   min-width: 210mm;
@@ -26,6 +26,28 @@ main {
   justify-content: center; /* 横を中央揃えにする */
   align-items: center; /* 縦を中央揃えにする */
   flex-direction: column;
+}
+
+.user-information {
+  width: 200px;
+  background-color: rgb(216, 99, 99);
+  padding: 10px;
+
+  &__top {
+    display: flex;
+    background-color: blue;
+    padding: 5px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__name {
+    background-color: white;
+  }
+
+  &__member-status {
+    background-color: gold;
+  }
 }
 
 footer {

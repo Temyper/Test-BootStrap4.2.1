@@ -10,7 +10,7 @@ a {
 }
 
 body {
-  background-color: #c7860f;
+  background-color: #6dec93;
   display: flex;
   flex-flow: column;
   min-width: 210mm;
@@ -30,6 +30,25 @@ main {
   align-items: center;
   /* 縦を中央揃えにする */
   flex-direction: column;
+}
+
+.user-information {
+  width: 200px;
+  background-color: #d86363;
+  padding: 10px;
+}
+.user-information__top {
+  display: flex;
+  background-color: blue;
+  padding: 5px;
+  justify-content: space-around;
+  align-items: center;
+}
+.user-information__name {
+  background-color: white;
+}
+.user-information__member-status {
+  background-color: gold;
 }
 
 footer {

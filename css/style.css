@@ -19,7 +19,9 @@ body {
 
 header {
   background-color: #d69b41;
-  text-align: center;
+}
+header > h1 {
+  padding-left: 50px;
 }
 
 main {
@@ -33,22 +35,53 @@ main {
 }
 
 .user-information {
-  width: 200px;
+  width: 500px;
   background-color: #d86363;
   padding: 10px;
-}
-.user-information__top {
+  margin-right: auto;
+  margin-left: 50px;
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.user-information__profile {
+  display: flex;
+  flex-direction: column;
   background-color: blue;
-  padding: 5px;
-  justify-content: space-around;
+  padding: 10px;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100px;
+}
+.user-information__profile__top {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
-.user-information__name {
-  background-color: white;
+.user-information__icon {
+  width: 100px;
+  height: 100px;
+  background-image: url(../resource/UserIcon.png);
+  background-size: cover;
 }
-.user-information__member-status {
+.user-information__profile__top__name {
+  margin-right: 5px;
+  background-color: white;
+  text-align: center;
+  width: 100px;
+}
+.user-information__profile__top__member-status {
   background-color: gold;
+  width: 150px;
+}
+.user-information__profile__bottom__introduction {
+  background-color: white;
+  margin-top: 5px;
+  width: 250px;
+  height: 50px;
+}
+.user-information__profile__bottom__introduction > span {
+  padding: 10px;
 }
 
 .contents {

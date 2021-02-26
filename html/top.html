@@ -16,18 +16,36 @@
     </header>
     <main>
       <div class="user-information">
-        <div class="user-information__top">
-          <div class="user-information__name">Tom</div>
-          <button type="button" class="user-information__member-status">
-            プレミアム会員
-          </button>
+        <div class="user-information__icon"></div>
+        <div class="user-information__profile">
+          <div class="user-information__profile__top">
+            <div class="user-information__profile__top__name">Tom</div>
+            <button
+              type="button"
+              class="user-information__profile__top__member-status"
+            >
+              プレミアム会員
+            </button>
+          </div>
+          <div class="user-information__profile__bottom">
+            <div class="user-information__profile__bottom__introduction">
+              <span>ギョギョッ！</span>
+            </div>
+          </div>
         </div>
       </div>
       <div class="container contents">
         <div class="row contents__menu">
-          <div class="col-sm contents__menu__item">Lorem ipsum 1.</div>
+          <div class="col-sm-1 contents__menu__item">Lorem ipsum 1.</div>
           <div class="col-sm contents__menu__item">Lorem ipsum 2.</div>
-          <div class="col-5 contents__menu__item">Lorem ipsum 3.</div>
+          <div class="col-sm-8 contents__menu__item">Lorem ipsum 3.</div>
+        </div>
+        <div class="row contents__menu">
+          <div class="col-sm-6 col-lg-1 contents__menu__item">
+            Lorem ipsum 1.
+          </div>
+          <div class="col-sm-4 contents__menu__item">Lorem ipsum 2.</div>
+          <div class="col-sm contents__menu__item">Lorem ipsum 3.</div>
         </div>
       </div>
     </main>

@@ -23,10 +23,20 @@ header > h1 {
   padding-left: 50px;
 }
 
+.contents {
+  background-color: #7a7676;
+  height: 100%;
+  padding: 5px 20px 0px 20px;
+}
+
 .user-information {
-  background-color: #d86363;
-  display: flex;
   padding: 5px;
+  background-color: #a19e9e;
+}
+.user-information__icon {
+  background-image: url(../resource/UserIcon.png);
+  background-size: cover;
+  margin-right: 15px;
 }
 .user-information__profile {
   display: flex;
@@ -35,19 +45,11 @@ header > h1 {
   padding: 10px;
   justify-content: center;
   align-items: flex-start;
-  height: 100px;
 }
 .user-information__profile__top {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.user-information__icon {
-  width: 100px;
-  height: 100px;
-  background-image: url(../resource/UserIcon.png);
-  background-size: cover;
-  margin-right: 20px;
 }
 .user-information__profile__top__name {
   margin-right: 5px;
@@ -59,26 +61,26 @@ header > h1 {
   background-color: gold;
   width: 150px;
 }
-.user-information__profile__bottom__introduction {
+.user-information__profile__introduction {
   background-color: white;
   margin-top: 5px;
-  width: 500px;
+  width: 100%;
   height: 50px;
 }
-.user-information__profile__bottom__introduction > span {
+.user-information__profile__introduction > span {
   padding: 10px;
 }
 
-.contents {
-  background-color: #7a7676;
-  height: 600px;
+.user-assertion {
+  margin-top: 5px;
+  height: 450px;
 }
-.contents__menu__item {
-  background-color: #7ebcf7;
-  text-align: center;
-  font-size: large;
-  padding: 5px;
-  margin: 5px;
+.user-assertion__left-side-bar {
+  background-color: white;
+  margin-right: 5px;
+}
+.user-assertion__contents {
+  background-color: red;
 }
 
 footer {

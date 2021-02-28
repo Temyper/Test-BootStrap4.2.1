@@ -31,12 +31,29 @@ header {
 //   flex-direction: column;
 // }
 
+.contents {
+  background-color: rgb(122, 118, 118);
+  height: 100%;
+  padding: 5px 20px 0px 20px;
+
+  // &__menu__item {
+  //   background-color: rgb(126, 188, 247);
+  //   text-align: center;
+  //   font-size: large;
+  //   padding: 5px;
+  //   margin: 5px;
+  // }
+}
+
 .user-information {
-  background-color: rgb(216, 99, 99);
-  display: flex;
-  // justify-content: center;
-  // align-items: flex-start;
   padding: 5px;
+  background-color: rgb(161, 158, 158);
+
+  &__icon {
+    background-image: url(../resource/UserIcon.png);
+    background-size: cover;
+    margin-right: 15px;
+  }
 
   &__profile {
     display: flex;
@@ -45,21 +62,13 @@ header {
     padding: 10px;
     justify-content: center;
     align-items: flex-start;
-    height: 100px;
+    // height: 100px;
   }
 
   &__profile__top {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  &__icon {
-    width: 100px;
-    height: 100px;
-    background-image: url(../resource/UserIcon.png);
-    background-size: cover;
-    margin-right: 20px;
   }
 
   &__profile__top__name {
@@ -74,28 +83,28 @@ header {
     width: 150px;
   }
 
-  &__profile__bottom__introduction {
+  &__profile__introduction {
     background-color: white;
     margin-top: 5px;
-    width: 500px;
+    width: 100%;
     height: 50px;
   }
 
-  &__profile__bottom__introduction > span {
+  &__profile__introduction > span {
     padding: 10px;
   }
 }
 
-.contents {
-  background-color: rgb(122, 118, 118);
-  height: 600px;
+.user-assertion {
+  margin-top: 5px;
+  height: 450px;
+  &__left-side-bar {
+    background-color: white;
+    margin-right: 5px;
+  }
 
-  &__menu__item {
-    background-color: rgb(126, 188, 247);
-    text-align: center;
-    font-size: large;
-    padding: 5px;
-    margin: 5px;
+  &__contents {
+    background-color: red;
   }
 }
 

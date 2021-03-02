@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-flow: column;
   min-width: 210mm;
-  min-height: 297mm;
+  height: 297mm;
 }
 
 header {
@@ -36,13 +36,12 @@ header > h1 {
 .user-information__icon {
   background-image: url(../resource/UserIcon.png);
   background-size: cover;
-  margin-right: 15px;
+  margin-right: 5px;
 }
 .user-information__profile {
   display: flex;
   flex-direction: column;
-  background-color: blue;
-  padding: 10px;
+  padding: 5px;
   justify-content: center;
   align-items: flex-start;
 }
@@ -73,14 +72,52 @@ header > h1 {
 
 .user-assertion {
   margin-top: 5px;
-  height: 450px;
+  padding-bottom: 5px;
+  height: 800px;
 }
 .user-assertion__left-side-bar {
   background-color: white;
-  margin-right: 5px;
+  margin-right: 10px;
+  height: 100%;
 }
 .user-assertion__contents {
-  background-color: red;
+  background-color: #d1f0a9;
+  padding: 5px;
+  overflow-y: scroll;
+  height: 100%;
+}
+.user-assertion__contents__article {
+  height: 200px;
+  background-color: #0c7e3b;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  border: black 1px solid;
+}
+.user-assertion__contents__article__body {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  height: 90%;
+}
+.user-assertion__contents__article__body__head {
+  background-color: #b4f1ec;
+  height: 100%;
+  width: 40%;
+  padding: 5% 10px 0 10px;
+}
+.user-assertion__contents__article__body__introduction {
+  background-color: #48db48;
+  height: 100%;
+  width: 60%;
+  padding-left: 10px;
+  padding: 5% 10px 0 10px;
+}
+.user-assertion__contents__article__profile {
+  margin-top: auto;
+  margin-left: auto;
+  padding: 5px 15px 5px 5px;
+  color: white;
 }
 
 footer {

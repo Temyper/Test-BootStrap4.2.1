@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-flow: column;
   min-width: 210mm;
-  min-height: 297mm;
+  height: 297mm;
 }
 
 header {
@@ -24,25 +24,10 @@ header {
   }
 }
 
-// main {
-//   display: flex; /* 親要素をFlexboxにする */
-//   justify-content: center; /* 横を中央揃えにする */
-//   align-items: center; /* 縦を中央揃えにする */
-//   flex-direction: column;
-// }
-
 .contents {
   background-color: rgb(122, 118, 118);
   height: 100%;
   padding: 5px 20px 0px 20px;
-
-  // &__menu__item {
-  //   background-color: rgb(126, 188, 247);
-  //   text-align: center;
-  //   font-size: large;
-  //   padding: 5px;
-  //   margin: 5px;
-  // }
 }
 
 .user-information {
@@ -52,14 +37,14 @@ header {
   &__icon {
     background-image: url(../resource/UserIcon.png);
     background-size: cover;
-    margin-right: 15px;
+    margin-right: 5px;
   }
 
   &__profile {
     display: flex;
     flex-direction: column;
-    background-color: blue;
-    padding: 10px;
+    // background-color: rgb(149, 231, 190);
+    padding: 5px;
     justify-content: center;
     align-items: flex-start;
     // height: 100px;
@@ -97,14 +82,60 @@ header {
 
 .user-assertion {
   margin-top: 5px;
-  height: 450px;
+  padding-bottom: 5px;
+  height: 800px;
   &__left-side-bar {
     background-color: white;
-    margin-right: 5px;
+    margin-right: 10px;
+    height: 100%;
   }
 
   &__contents {
-    background-color: red;
+    background-color: rgb(209, 240, 169);
+    padding: 5px;
+    overflow-y: scroll;
+    height: 100%;
+  }
+
+  &__contents__article {
+    height: 200px;
+    background-color: rgb(12, 126, 59);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    border: black 1px solid;
+  }
+
+  &__contents__article__body {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: 90%;
+  }
+
+  &__contents__article__body__head {
+    background-color: rgb(180, 241, 236);
+    height: 100%;
+    width: 40%;
+    padding: 5% 10px 0 10px;
+  }
+
+  &__contents__article__body__introduction {
+    background-color: rgb(72, 219, 72);
+    // color: white;
+    height: 100%;
+    width: 60%;
+    padding-left: 10px;
+    padding: 5% 10px 0 10px;
+  }
+
+  &__contents__article__profile {
+    // 20210302底に置く
+    margin-top: auto;
+    // 20210302右端に置く
+    margin-left: auto;
+    padding: 5px 15px 5px 5px;
+    color: white;
   }
 }
 

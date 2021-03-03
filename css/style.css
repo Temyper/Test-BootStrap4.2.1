@@ -10,7 +10,6 @@ a {
 
 body {
   background-color: #6dec93;
-  display: flex;
   flex-flow: column;
   min-width: 210mm;
   height: 297mm;
@@ -18,11 +17,8 @@ body {
 
 header {
   background-color: #d69b41;
-  position: fixed;
-  z-index: 99;
   width: 100%;
-  top: 0;
-  left: 0;
+  height: 60px;
 }
 
 main {

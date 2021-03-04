@@ -10,53 +10,29 @@ a {
 
 body {
   background-color: #6dec93;
-  flex-flow: column;
   min-width: 210mm;
   height: 297mm;
 }
 
 header {
   background-color: #d69b41;
-  width: 100%;
   height: 60px;
-}
-
-main {
-  margin-top: auto;
 }
 
 .contents {
   background-color: #7a7676;
-  height: 100%;
   padding: 5px 20px 0px 20px;
 }
 
 .user-information {
-  padding: 5px;
   background-color: #a19e9e;
 }
 .user-information__icon {
   background-image: url(../resource/UserIcon.png);
   background-size: cover;
-  margin-right: 5px;
-}
-.user-information__profile {
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
-  justify-content: center;
-  align-items: flex-start;
-}
-.user-information__profile__top {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .user-information__profile__top__name {
-  margin-right: 5px;
   background-color: white;
-  text-align: center;
-  width: 100px;
 }
 .user-information__profile__top__member-status {
   background-color: gold;
@@ -64,68 +40,42 @@ main {
 }
 .user-information__profile__introduction {
   background-color: white;
-  margin-top: 5px;
-  width: 100%;
   height: 50px;
-}
-.user-information__profile__introduction > span {
-  padding: 10px;
 }
 
 .user-assertion {
-  margin-top: 5px;
-  padding-bottom: 5px;
   height: 800px;
 }
 .user-assertion__left-side-bar {
   background-color: white;
-  margin-right: 10px;
-  height: 100%;
 }
 .user-assertion__contents {
   background-color: #d1f0a9;
-  padding: 5px;
-  overflow-y: scroll;
-  height: 100%;
 }
 .user-assertion__contents__article {
   height: 200px;
   background-color: #0c7e3b;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
   border: black 1px solid;
 }
 .user-assertion__contents__article__body {
-  display: flex;
-  align-items: center;
-  padding: 10px;
   height: 90%;
 }
 .user-assertion__contents__article__body__head {
   background-color: #b4f1ec;
-  height: 100%;
   width: 40%;
   padding: 5% 10px 0 10px;
 }
 .user-assertion__contents__article__body__introduction {
   background-color: #48db48;
-  height: 100%;
   width: 60%;
-  padding-left: 10px;
   padding: 5% 10px 0 10px;
 }
 .user-assertion__contents__article__profile {
-  margin-top: auto;
-  margin-left: auto;
   padding: 5px 15px 5px 5px;
-  color: white;
 }
 
 footer {
   background-color: black;
-  text-align: center;
-  margin-top: auto;
   color: white;
   height: 60px;
   padding: 20px;

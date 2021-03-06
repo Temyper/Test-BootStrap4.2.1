@@ -7,3 +7,13 @@
 a {
   text-decoration: none;
 }
+
+.user-assertion {
+  &__contents__article__introduction {
+    background-color: rgb(72, 219, 72);
+  }
+  // 202103071文字目を大きくする
+  &__contents__article__body__text::first-letter {
+    font-size: 50px;
+  }
+}

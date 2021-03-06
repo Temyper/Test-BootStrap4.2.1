@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="../js/jquery.min.js"></script>
     <script defer src="../bootstrap/bootstrap.js"></script>
@@ -10,11 +9,15 @@
     <link rel="stylesheet" href="../css/style.css" />
     <title>Document</title>
   </head>
-  <body>
-    <header>
-      <!-- https://getbootstrap.jp/docs/4.4/components/navbar/ -->
+  <!-- <body class="d-flex"> -->
+  <body class="d-flex flex-column">
+    <header class="fixed-top">
+      <!-- navbar：https://getbootstrap.jp/docs/4.4/components/navbar/ -->
+      <!-- Sizing：https://getbootstrap.com/docs/4.4/utilities/sizing/ -->
+      <!-- https://getbootstrap.com/docs/4.0/utilities/flex/ -->
+      <!-- Flex：https://getbootstrap.com/docs/4.0/utilities/flex/ -->
+      <!-- Colors：https://getbootstrap.com/docs/4.0/utilities/colors/ -->
 
-      <!-- 20210303navbar-expandが無いとき、常に折りたたむ -->
       <!-- <nav class="navbar navbar-light bg-light"> -->
       <nav class="navbar navbar-expand-md navbar-light">
         <a class="navbar-brand" href="top.html"> <h2>BootStrap4.2.1</h2></a>
@@ -73,16 +76,30 @@
       </nav>
     </header>
     <main>
-      <div class="container contents">
-        <div class="row">
-          <div class="col-3"></div>
-          <div class="col-6">
-            <div class="explanation bg-white">This site</div>
+      <!-- 20210305Overflow：https://getbootstrap.com/docs/4.3/utilities/overflow/ -->
+      <div class="container contents mt-2 p-1">
+        <div class="wrapper bg-white p-2">
+          <div class="row d-flex flex-column justify-content-center">
+            <div class="about text-center">
+              <h2 class="mb-2 mt-5">About</h2>
+
+              <h4 class="mt-4">This site is a test for using BootStrap.</h4>
+              <div class="d-inline-block w-50 mt-5">
+                <p>This site doesn't have any services.</p>
+                <p>This site has no reason except using Bootstrap.</p>
+                <p>After doing, updating this site is going to be stopped.</p>
+              </div>
+              <h3 class="mt-5">Thank you for comming.</h3>
+            </div>
           </div>
-          <div class="col-3"></div>
+          <div class="row d-flex justify-content-center align-content-center">
+            <a name="home" class="btn btn-primary" href="top.html" role="button"
+              >Home</a
+            >
+          </div>
         </div>
       </div>
     </main>
-    <footer>Test-BootStrap4.2.1</footer>
+    <footer class="text-center mt-auto">Test-BootStrap4.2.1</footer>
   </body>
 </html>

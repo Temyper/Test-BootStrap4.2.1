@@ -2,48 +2,130 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="../js/jquery.min.js"></script>
     <script defer src="../bootstrap/bootstrap.js"></script>
     <link rel="stylesheet" href="../bootstrap/bootstrap.css" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/article.css" />
     <title>Document</title>
   </head>
-  <body>
-    <header>
-      <h1>Test-BootStrap4.2.1</h1>
+  <!-- <body class="d-flex"> -->
+  <body class="d-flex flex-column">
+    <header class="fixed-top">
+      <!-- navbar：https://getbootstrap.jp/docs/4.4/components/navbar/ -->
+      <!-- Sizing：https://getbootstrap.com/docs/4.4/utilities/sizing/ -->
+      <!-- https://getbootstrap.com/docs/4.0/utilities/flex/ -->
+      <!-- Flex：https://getbootstrap.com/docs/4.0/utilities/flex/ -->
+      <!-- Colors：https://getbootstrap.com/docs/4.0/utilities/colors/ -->
+
+      <!-- <nav class="navbar navbar-light bg-light"> -->
+      <nav class="navbar navbar-expand-md navbar-light">
+        <a class="navbar-brand" href="top.html"> <h2>BootStrap4.2.1</h2></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="top.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
     </header>
     <main>
-      <div class="container contents">
-        <div class="row user-information">
-          <div class="col-3 col-sm-2 user-information__icon"></div>
-          <div class="col user-information__profile">
-            <div class="user-information__profile__top">
-              <div class="user-information__profile__top__name">Tom</div>
+      <!-- 20210305Overflow：https://getbootstrap.com/docs/4.3/utilities/overflow/ -->
+      <div class="container contents mt-2">
+        <div class="row user-information p-1">
+          <div class="col-3 col-sm-2 user-information__icon mr-1"></div>
+          <div
+            class="col user-information__profile p-1 d-flex flex-column align-items-start"
+          >
+            <div
+              class="user-information__profile__top d-flex justify-content-center align-items-center"
+            >
+              <div
+                class="user-information__profile__top__name mr-1 text-center w-100"
+              >
+                Cassie
+              </div>
               <button
                 type="button"
                 class="user-information__profile__top__member-status"
               >
-                プレミアム会員
+                Premium
               </button>
             </div>
-            <div class="user-information__profile__introduction">
-              <span>ギョギョッ！</span>
+            <div class="user-information__profile__introduction mt-1 w-100">
+              <span class="p-2">Thank you for reading my assertions.</span>
             </div>
           </div>
         </div>
-        <div class="row user-assertion">
-          <div class="col-3 col-sm-2 user-assertion__left-side-bar">
+        <div class="row user-assertion mt-1 pb-1">
+          <div class="col-3 col-sm-2 user-assertion__left-side-bar mr-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo placeat
             expedita, facere mollitia iure veniam perferendis modi quos ab
             molestias, doloremque repellat recusandae similique, enim error
             laudantium? Culpa, tenetur at.
           </div>
-          <div class="col user-assertion__contents"></div>
+          <!-- 20210305Overflow：https://getbootstrap.com/docs/4.3/utilities/overflow/ -->
+          <!-- とくに-y指定しなくてもy軸方向だけスクロールバーが発生する -->
+          <div class="col user-assertion__contents p-1 overflow-auto h-100">
+            <div class="user-assertion__content__head text-center p-3">
+              <h2>I've met her.</h2>
+              <p class="d-inline-block w-50 mt-3">
+                I've met a mysterious woman. She said cats are wonderful, cats
+                are great, cats are gods, and so on... Now, I've heard her voice
+                worshipping cats. What should I do?
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </main>
-    <footer>Test-BootStrap4.2.1</footer>
+    <footer class="text-center mt-auto">Test-BootStrap4.2.1</footer>
   </body>
 </html>

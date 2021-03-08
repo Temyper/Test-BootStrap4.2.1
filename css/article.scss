@@ -19,6 +19,10 @@ a {
   &__contents__article__body__text::first-letter {
     font-size: 50px;
   }
+
+  &__contents__article__comments__comment {
+    background-color: rgb(209, 235, 172);
+  }
 }
 
 .comment {
@@ -33,6 +37,6 @@ a {
   }
 
   &__area__text {
-    background-color: rgb(224, 216, 216);
+    background-color: rgb(221, 188, 188);
   }
 }

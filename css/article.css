@@ -17,6 +17,9 @@ a {
 .user-assertion__contents__article__body__text::first-letter {
   font-size: 50px;
 }
+.user-assertion__contents__article__comments__comment {
+  background-color: #d1ebac;
+}
 
 .comment__icon {
   width: 100px;
@@ -27,5 +30,5 @@ a {
   font-size: large;
 }
 .comment__area__text {
-  background-color: #e0d8d8;
+  background-color: #ddbcbc;
 }/*# sourceMappingURL=article.css.map */

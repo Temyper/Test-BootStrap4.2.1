@@ -9,11 +9,30 @@ a {
 }
 
 .user-assertion {
+  &__contents__article__top {
+    background-color: rgb(39, 192, 39);
+  }
   &__contents__article__introduction {
     background-color: rgb(72, 219, 72);
   }
   // 202103071文字目を大きくする
   &__contents__article__body__text::first-letter {
     font-size: 50px;
+  }
+}
+
+.comment {
+  &__icon {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+  }
+
+  &__area {
+    font-size: large;
+  }
+
+  &__area__text {
+    background-color: rgb(224, 216, 216);
   }
 }

@@ -8,9 +8,24 @@ a {
   text-decoration: none;
 }
 
+.user-assertion__contents__article__top {
+  background-color: #27c027;
+}
 .user-assertion__contents__article__introduction {
   background-color: #48db48;
 }
 .user-assertion__contents__article__body__text::first-letter {
   font-size: 50px;
+}
+
+.comment__icon {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+}
+.comment__area {
+  font-size: large;
+}
+.comment__area__text {
+  background-color: #e0d8d8;
 }/*# sourceMappingURL=article.css.map */
